@@ -20,7 +20,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: 'PokeApp',
+                    title: 'Mis Pokemons',
                     tabBarIcon: ({ focused, color }) => (
                         <Ionicons
                             name={focused ? 'home-sharp' : 'home-outline'}
@@ -31,12 +31,38 @@ export default function TabLayout() {
                 }}
             />
             <Tabs.Screen
-                name="about"
+                name="search-poke"
                 options={{
-                    title: 'Ventana 2',
+                    title: 'Buscar',
                     tabBarIcon: ({ focused, color }) => (
                         <Ionicons
-                            name={focused ? 'information-circle' : 'information-circle-outline'}
+                            name={focused ? 'search' : 'search-outline'}
+                            color={color} 
+                            size={24}
+                        />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="adopt-pokemon"
+                options={{
+                    title: 'Adoptar Pokemon',
+                    tabBarIcon: ({ focused, color }) => (
+                        <Ionicons
+                            name={focused ? 'add-circle' : 'add-circle-outline'}
+                            color={color} 
+                            size={24}
+                        />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="config"
+                options={{
+                    title: 'Configuracion',
+                    tabBarIcon: ({ focused, color }) => (
+                        <Ionicons
+                            name={focused ? 'cog' : 'cog-outline'}
                             color={color} 
                             size={24}
                         />
